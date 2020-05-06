@@ -2,10 +2,22 @@
 This is an implementation of the PAC-Bayes generalization bound optimization for stochastic neural networks, as described in the article "[Computing Nonvacuous Generalization Bounds for Deep (Stochastic) Neural Networks with Many More Parameters than Training Data](https://arxiv.org/pdf/1703.11008.pdf)" by Dziugaite and Roy, published in *Uncertainty in AI* (2017).
 
 ## Requirements
+
+The code works with:
+
 - Python 3.5
 - Numpy 1.14.5
 - Tensorflow 1.10.1
 - Keras 2.2.2
+
+### Setting up a Conda environment
+
+To get the proper version of each package, I recommend using the [Conda Package Manager](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#managing-environments) (in particular [Miniconda](https://docs.conda.io/en/latest/miniconda.html)). 
+In this case, from the repository folder, issue
+```
+conda create --prefix ./pacbayes_env python=3.5 numpy=1.14.5 tensorflow=1.10 keras=2.2.2
+```
+which you can then activate with the command `conda activate ./pacbayes_env`. 
 
 ## Instructions
 Running the code involves 2 steps:
