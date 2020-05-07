@@ -1,7 +1,7 @@
 import os
 import sys
-sys.path.insert(0, "/snn/")
-sys.path.insert(0, "/")
+sys.path.insert(0, "./snn/")
+sys.path.insert(0, "./")
 
 from snn.core import package_path
 from snn.core.parse_args import CompleteParser, Interpreter
